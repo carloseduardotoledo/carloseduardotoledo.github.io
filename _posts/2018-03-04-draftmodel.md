@@ -11,21 +11,25 @@ The final model will probably look like this first draft below:
 ![_config.yml]({{ site.baseurl }}/images/Pipeline_GraphModel_Draft.png)
 
 For the ones not initiated in the matter, Risk Assessment can be defined as the product of Probability of Failure (PoF) times the Consequence of Failure (CoF), 
-``
+
+```
 Risk = PoF x CoF.
-``
+```
+
 Probability of Failure (PoF) can be describe as a function of: failure mechanisms that exposes the pipeline, mitigation measures to reduce the threat level, and the intrinsic resistance of the pipe segment when a threat mechanism gets to it.
-``
+
+```
 PoF = f(exposition, mitigation, resistance)
-``
+```
+
 Consequence of Failure (CoF) can be described as a function of: the receptors (people, environment and property), the product being transported by the pipeline, the area affected.  
-``
+```
 CoF = f(receptors, product, area)
-``
+```
 
 Reading the Graph model is quite straightforward, but I’ve created a little story to illustrate the model anyway.
 
-Farmer Joe never wanted that damn pipeline to cross his lands, but it did anyway.  Now he have to worry of hitting the pipe when tilling the soil with a disc harrow, that he is still paying for, attached to his old tractor.  Farm activity (like landslides or corrosion processes) is seen as a Failure Mechanism threatening the pipeline. To keep this incident from happening the pipeline operator maintains an open channel with Joe, so he can ask the company what activities are safe inside the right of way.  Communication, signalization and the depth of cover on a buried pipeline acts as mitigations to reduce the failure potential of a failure mechanism, it will reduce the chances of Joe hitting the pipe.  
+Farmer Joe never wanted that damn pipeline to cross his lands, but it did anyway.  Now he have to worry of hitting the pipe when tilling the soil with a disc harrow, that he is still paying for, attached to his old tractor.  Farm activity like landslides or corrosion processes are seen as a Failure Mechanism threatening the pipeline. To keep this incident from happening the pipeline operator maintains an open channel with Joe, so he can ask the company what activities are safe inside the right of way.  Communication, signalization and the depth of cover on a buried pipeline acts as mitigations to reduce the failure potential of a failure mechanism, it will reduce the chances of Joe hitting the pipe.  
 
 Occasionally and unfortunately, failure mechanisms overpass mitigation measures and do strikes the pipeline.  When it happens, the amount of intrinsic resistance of the pipeline segment to resists the theat mechanism will be the only thing keeping the pipe to leak or explode, causing impact to receptors: people, environment and property. In ours little model Mary’s house and the local schools are receptors.  
 This history is built on relations:
@@ -49,14 +53,14 @@ See you next post.  Probably discussing some Python coding, but I may bring some
 
 Best regards,
 
-**Pipeline accidents are seriouly business, to the reader not use to this industry I suggest the reading of this list of accidents:  https://en.wikipedia.org/wiki/List_of_pipeline_accidents**
+**Pipeline accidents are seriouly business, to the reader not use to this industry I suggest the reading of this list of accidents:  [](https://en.wikipedia.org/wiki/List_of_pipeline_accidents)**
 
 References:
 
-* Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly). Copyright 2015 Neo Technology, Inc., 978-1-491-93089-2.  You can freely download a copy of the book, compliments of Neo4j, at (https://neo4j.com/graph-databases-book/)
+* Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly). Copyright 2015 Neo Technology, Inc., 978-1-491-93089-2.  You can freely download a copy of the book, compliments of Neo4j, at [](https://neo4j.com/graph-databases-book/)
 
-* Enhanced Pipeline Risk Assessment, Part 1 — Probability of Failure Assessments Revision 2.1 W. Kent Muhlbauer, PE (http://pipelinerisk.net/)
+* Enhanced Pipeline Risk Assessment, Part 1 — Probability of Failure Assessments Revision 2.1 W. Kent Muhlbauer, PE [](http://pipelinerisk.net/)
 
-* Enhanced Pipeline Risk Assessment, Part 2 — Assessments of Pipeline Failure Consequences Rev 3 W. Kent Muhlbauer, PE (http://pipelinerisk.net/)
+* Enhanced Pipeline Risk Assessment, Part 2 — Assessments of Pipeline Failure Consequences Rev 3 W. Kent Muhlbauer, PE [](http://pipelinerisk.net/)
 
-* Diagrams built using Draw.io ( https://www.draw.io/ )
+* Diagrams built using Draw.io [](https://www.draw.io/)
