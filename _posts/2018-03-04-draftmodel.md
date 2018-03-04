@@ -8,7 +8,7 @@ So what this post is about? You might be wondering. This post is about have fun 
 
 The final model will probably look like this first draft below:
 
-![_config.yml]({{ site.baseurl }}/images/peline_GraphModel_Draft.png)
+![_config.yml]({{ site.baseurl }}/images/Pipeline_GraphModel_Draft.png)
 
 For the ones not initiated in the matter, Risk Assessment can be defined as the product of Probability of Failure (PoF) times the Consequence of Failure (CoF), 
 ```
@@ -40,16 +40,16 @@ Pipe Segment - Connects to -> Valve
 
 As is the Risk Assessment. So, I think it makes senses that a Risk Assessment algorithm uses a Graph Database. The following text was extracted from Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly):
 
-The previous examples (Relational and NOSQL Databases) have dealt with implicitly connected data. As users we infer semantic dependencies between entities, but the data models—and the databases themselves—are blind to these connections. To compensate, our applications must
-create a network out of the flat, disconnected data at hand, and then deal with any slow queries and latent writes across denormalized stores that arise. 
+_The previous examples (Relational and NOSQL Databases) have dealt with implicitly connected data. As users we infer semantic dependencies between entities, but the data models—and the databases themselves—are blind to these connections. To compensate, our applications must
+create a network out of the flat, disconnected data at hand, and then deal with any slow queries and latent writes across denormalized stores that arise._
 
-What we really want is a cohesive picture of the whole, including the connections between elements. In contrast to the stores we’ve just looked at, in the graph world, connected data is stored as connected data. Where there are connections in the domain, there are connections in the data.
+_What we really want is a cohesive picture of the whole, including the connections between elements. In contrast to the stores we’ve just looked at, in the graph world, connected data is stored as connected data. Where there are connections in the domain, there are connections in the data._
 
 See you next post.  Probably discussing some Python coding, but I may bring some thoughts on the differences between Graph Databases and Graph Compute Engines, and why I’ve choose the former, and why I’m not excluding the latter.
 
 Best regards,
 
-Pipeline accidents are seriouly business, to the reader not use to this industry I suggest the reading of this list of accidents:  https://en.wikipedia.org/wiki/List_of_pipeline_accidents
+**Pipeline accidents are seriouly business, to the reader not use to this industry I suggest the reading of this list of accidents:  https://en.wikipedia.org/wiki/List_of_pipeline_accidents**
 
 References:
 
