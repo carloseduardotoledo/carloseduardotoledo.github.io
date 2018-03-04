@@ -36,9 +36,13 @@ This history is built on relations:
 
 ```
 Mitigation - Mitigate -> Failure mechanism
+
 Failure mechanism - Threats -> Pipe Segment
+
 Pipe Segment - Can harm -> Receptor
+
 Pipe Segment - Connects to -> Pipe Segment
+
 Pipe Segment - Connects to -> Valve
 ```
 
@@ -53,14 +57,14 @@ See you next post.  Probably discussing some Python coding, but I may bring some
 
 Best regards,
 
-**Pipeline accidents are seriouly business, to the reader not use to this industry I suggest the reading of this list of accidents:  [](https://en.wikipedia.org/wiki/List_of_pipeline_accidents)**
+**Pipeline accidents are seriouly business, to the reader not use to this industry I suggest the reading of this list of accidents:  [List of Pipeline Accidents](https://en.wikipedia.org/wiki/List_of_pipeline_accidents)**
 
 References:
 
-* Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly). Copyright 2015 Neo Technology, Inc., 978-1-491-93089-2.  You can freely download a copy of the book, compliments of Neo4j, at [](https://neo4j.com/graph-databases-book/)
+* Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly). Copyright 2015 Neo Technology, Inc., 978-1-491-93089-2.  You can freely download a copy of the book, compliments of Neo4j, at [here](https://neo4j.com/graph-databases-book/)
 
-* Enhanced Pipeline Risk Assessment, Part 1 — Probability of Failure Assessments Revision 2.1 W. Kent Muhlbauer, PE [](http://pipelinerisk.net/)
+* Enhanced Pipeline Risk Assessment, Part 1 — Probability of Failure Assessments Revision 2.1 W. Kent Muhlbauer, PE [here](http://pipelinerisk.net/)
 
-* Enhanced Pipeline Risk Assessment, Part 2 — Assessments of Pipeline Failure Consequences Rev 3 W. Kent Muhlbauer, PE [](http://pipelinerisk.net/)
+* Enhanced Pipeline Risk Assessment, Part 2 — Assessments of Pipeline Failure Consequences Rev 3 W. Kent Muhlbauer, PE [here](http://pipelinerisk.net/)
 
-* Diagrams built using Draw.io [](https://www.draw.io/)
+* Diagrams built using Draw.io [here](https://www.draw.io/)
