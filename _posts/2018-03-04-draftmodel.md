@@ -44,10 +44,10 @@ Pipe Segment - Connects to -> Valve
 
 As is the Risk Assessment. So, I think it makes senses that a Risk Assessment algorithm uses a Graph Database. The following text was extracted from Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly):
 
-_The previous examples (Relational and NOSQL Databases) have dealt with implicitly connected data. As users we infer semantic dependencies between entities, but the data models—and the databases themselves—are blind to these connections. To compensate, our applications must
-create a network out of the flat, disconnected data at hand, and then deal with any slow queries and latent writes across denormalized stores that arise._
+>The previous examples (Relational and NOSQL Databases) have dealt with implicitly connected data. As users we infer semantic dependencies between entities, but the data models—and the databases themselves—are blind to these connections. To compensate, our applications must
+create a network out of the flat, disconnected data at hand, and then deal with any slow queries and latent writes across denormalized stores that arise.
 
-_What we really want is a cohesive picture of the whole, including the connections between elements. In contrast to the stores we’ve just looked at, in the graph world, connected data is stored as connected data. Where there are connections in the domain, there are connections in the data._
+>What we really want is a cohesive picture of the whole, including the connections between elements. In contrast to the stores we’ve just looked at, in the graph world, connected data is stored as connected data. Where there are connections in the domain, there are connections in the data.
 
 See you next post.  Probably discussing some Python coding, but I may bring some thoughts on the differences between Graph Databases and Graph Compute Engines, and why I’ve choose the former, and why I’m not excluding the latter.
 
