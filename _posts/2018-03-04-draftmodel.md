@@ -8,13 +8,20 @@ So what this post is about? You might be wondering. This post is about have fun 
 
 The final model will probably look like this first draft below:
 
+![_config.yml]({{ site.baseurl }}/images/peline_GraphModel_Draft.png)
 
-
-For the ones not initiated in the matter, Risk Assessment can be defined as the product of Probability of Failure (PoF) times the Consequence of Failure (CoF), Risk = PoF x CoF.
-
+For the ones not initiated in the matter, Risk Assessment can be defined as the product of Probability of Failure (PoF) times the Consequence of Failure (CoF), 
+```
+Risk = PoF x CoF.
+```
 Probability of Failure (PoF) can be describe as a function of: failure mechanisms that exposes the pipeline, mitigation measures to reduce the threat level, and the intrinsic resistance of the pipe segment when a threat mechanism gets to it.
-
-Consequence of Failure (CoF) can be described as a function of: the receptors (people, environment and property), the product being transported by the pipeline, the área affected.  
+```
+PoF = f(exposition, mitigation, resistance)
+```
+Consequence of Failure (CoF) can be described as a function of: the receptors (people, environment and property), the product being transported by the pipeline, the area affected.  
+```
+CoF = f(receptors, product, area)
+```
 
 Reading the Graph model is quite straightforward, but I’ve created a little story to illustrate the model anyway.
 
@@ -23,11 +30,13 @@ Farmer Joe never wanted that damn pipeline to cross his lands, but it did anyway
 Occasionally and unfortunately, failure mechanisms overpass mitigation measures and do strikes the pipeline.  When it happens, the amount of intrinsic resistance of the pipeline segment to resists the theat mechanism will be the only thing keeping the pipe to leak or explode, causing impact to receptors: people, environment and property. In ours little model Mary’s house and the local schools are receptors.  
 This history is built on relations:
 
+```
 Mitigation - Mitigate -> Failure mechanism
 Failure mechanism - Threats -> Pipe Segment
 Pipe Segment - Can harm -> Receptor
 Pipe Segment - Connects to -> Pipe Segment
 Pipe Segment - Connects to -> Valve
+```
 
 As is the Risk Assessment. So, I think it makes senses that a Risk Assessment algorithm uses a Graph Database. The following text was extracted from Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly):
 
@@ -44,10 +53,10 @@ Pipeline accidents are seriouly business, to the reader not use to this industry
 
 References:
 
-Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly). Copyright 2015 Neo Technology, Inc., 978-1-491-93089-2.  You can freely download a copy of the book, compliments of Neo4j, at https://neo4j.com/graph-databases-book/
+* Graph Databases by Ian Robinson, Jim Webber, and Emil Eifrem (O’Reilly). Copyright 2015 Neo Technology, Inc., 978-1-491-93089-2.  You can freely download a copy of the book, compliments of Neo4j, at https://neo4j.com/graph-databases-book/
 
-Enhanced Pipeline Risk Assessment, Part 1 — Probability of Failure Assessments Revision 2.1 W. Kent Muhlbauer, PE ( http://pipelinerisk.net/ )
+* Enhanced Pipeline Risk Assessment, Part 1 — Probability of Failure Assessments Revision 2.1 W. Kent Muhlbauer, PE ( http://pipelinerisk.net/ )
 
-Enhanced Pipeline Risk Assessment, Part 2 — Assessments of Pipeline Failure Consequences Rev 3 W. Kent Muhlbauer, PE ( http://pipelinerisk.net/ )
+* Enhanced Pipeline Risk Assessment, Part 2 — Assessments of Pipeline Failure Consequences Rev 3 W. Kent Muhlbauer, PE ( http://pipelinerisk.net/ )
 
-Diagrams built using Draw.io ( https://www.draw.io/ )
+* Diagrams built using Draw.io ( https://www.draw.io/ )
