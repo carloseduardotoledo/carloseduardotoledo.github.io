@@ -6,7 +6,7 @@ title: A Draft Model
 “Dad, you are such a nerd!” That's what my 12yo daughter called the other night when I told that her math combinations and permutations homework was fun.  I'm a professional computer geek, but I don't see myself as nerd. But I’ll not waste the reader’s precious time discussing the differences between geeks and nerds. We rather discuss the differences between a Graph Databases and Graph Compute Engines, although not right now.
 So what is this post about? You might be wondering. This post is about having fun programming in Python, in reality it what I was meant at first, but no having fun programming Python for now. As much as I want to jump to programming my Geo to Graph interface I'll have to give some thoughts to the Risk Assessment Graph Model before, the model gives me context and help clarify the whole picture. This post is about the graph model.
 
-And fere is a first draft:
+And here is a first draft:
 
 ![_config.yml]({{ site.baseurl }}/images/Pipeline_GraphModel_Draft.png)
 
