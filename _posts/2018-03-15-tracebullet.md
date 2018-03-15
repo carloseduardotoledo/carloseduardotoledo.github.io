@@ -13,12 +13,12 @@ These first lines of code, I’m sharing it on GitHub under my Geo2graph reposit
 
 This first sample subject is the proximity relations between pipelines and earthquakes in Canada.  For the entry data we have a point shapefile with geographical locations, depth  and magnitude of earthquakes occurrences from 2010 to 2017 and pipeline segments on a line geometry shapefile with type, status and company. The goal is to build a graph database to answer two simple questions: which earthquake occurrences has posed as a threat to more than one pipeline? And, considering the historical records which pipeline has the highest exposition to earthquakes? To be able to get these questions answered this simple code performs the following steps:
 
-1. Creates the Near relation between earthquake, with magnitude 3 or higher, and pipelines within 1.5 km maximum distance from the earthquake.
+1) Creates the Near relation between earthquake, with magnitude 3 or higher, and pipelines within 1.5 km maximum distance from the earthquake.
 ```python
 arcpy.GenerateNearTable_analysis(in_features, [near_features], out_table, search_radius, 
                                  location, angle, closest, closest_count)
 ```
-1. Iterates Earthquakes spatial dataset and for each earthquake row creates a new Node in the graph database labeled as Threat Mechanism;
+2) Iterates Earthquakes spatial dataset and for each earthquake row creates a new Node in the graph database labeled as Threat Mechanism;
 ```python
 cursor = arcpy.SearchCursor(in_features,
                             where_clause="magnitude  >= 3",
@@ -34,7 +34,7 @@ for row in cursor:
         
         session.run(create_earthquake_cypher, fid=fid, depth=depth, magnitude=magnitude)
 ```
-1. Iterates Pipeline spatial dataset and for each pipeline row creates a new Node in the graph database labeled as Pipeline;
+3) Iterates Pipeline spatial dataset and for each pipeline row creates a new Node in the graph database labeled as Pipeline;
 ```python
 cursor = arcpy.SearchCursor(near_features,
                             fields="FID; PROJECT_NU; SEGMENT_NU; LINE_TYPE_; STATUS; PROPONENT")
@@ -55,7 +55,7 @@ for row in cursor:
                     segment_id=segment_id, line_type=line_type, status=status, 
                     operator=operator)
 ```
-1. Iterates Near relations (step 1) and for each near relation between earthquake and pipeline gets the respective Pipeline and Earthquake Nodes and create an Edge with distance as an attribute;
+4) Iterates Near relations (step 1) and for each near relation between earthquake and pipeline gets the respective Pipeline and Earthquake Nodes and create an Edge with distance as an attribute;
 ```python
 cursor = arcpy.SearchCursor(out_table)
 for row in cursor:
@@ -70,7 +70,7 @@ for row in cursor:
         
         session.run(create_threat_cypher, e_fid=e_fid, p_fid=p_fid, distance=distance)
 ```
-1. Deletes all Earthquakes Nodes without connections to Pipelines.
+5) Deletes all Earthquakes Nodes without connections to Pipelines.
 ```python
 driver.session().run("MATCH (n:Threat_Mechanism) WHERE size((n)--())=0 DELETE (n)")
 ```
@@ -80,4 +80,5 @@ The reader can find the complete code [here](https://github.com/carloseduardotol
 Take care!
 
 (1) In real life trace bullets are used by shooters to  visually follow the bullet trajectory at night from shooter to target and get a better aim.
+
 (2) It's worth noting how easy was to get Neo4j up and running in my micro AWS EC2 instance.  After I've got Docker installed, I've pulled the Neo4j image into Docker, started it and I was good to go.
