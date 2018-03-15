@@ -32,7 +32,7 @@ for row in cursor:
         depth = row.getValue("depth")
         magnitude = row.getValue("magnitude")
         
-        session.run(create_earthquake_cypher, fid=fid, depth=depth, magnitude=magnitude)'''
+        session.run(create_earthquake_cypher, fid=fid, depth=depth, magnitude=magnitude)
 ```
 1. Iterates Pipeline spatial dataset and for each pipeline row creates a new Node in the graph database labeled as Pipeline;
 ```python
@@ -53,7 +53,8 @@ for row in cursor:
         
         session.run(create_pipeline_cypher, fid=fid, project_id=project_id, 
                     segment_id=segment_id, line_type=line_type, status=status, 
-                    operator=operator)```
+                    operator=operator)
+```
 1. Iterates Near relations (step 1) and for each near relation between earthquake and pipeline gets the respective Pipeline and Earthquake Nodes and create an Edge with distance as an attribute;
 ```python
 cursor = arcpy.SearchCursor(out_table)
@@ -67,7 +68,8 @@ for row in cursor:
         p_fid = row.getValue("NEAR_FID")
         distance = row.getValue("NEAR_DIST")
         
-        session.run(create_threat_cypher, e_fid=e_fid, p_fid=p_fid, distance=distance)```
+        session.run(create_threat_cypher, e_fid=e_fid, p_fid=p_fid, distance=distance)
+```
 1. Deletes all Earthquakes Nodes without connections to Pipelines.
 ```python
 driver.session().run("MATCH (n:Threat_Mechanism) WHERE size((n)--())=0 DELETE (n)")
