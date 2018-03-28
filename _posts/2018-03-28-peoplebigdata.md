@@ -6,7 +6,7 @@ title: People, Big Data and Competitive Companies
 As Mariana Kantor noted in the Esri Newsroom [AI Leads Corporate Data Priorities, but Worries Outweigh Progress]( https://www.esri.com/about/newsroom/publications/wherenext/business-executives-and-ai/?adumkts=branding&aduc=social&adum=external&aduSF=linkedin&aduca=m18wherenext&aduco=execs_and_AI&adut=social_team&adbsc=social_20180326_2227211&adbid=6384051703582461952&adbpl=li&adbpr=5311) March 21, 2018 post, a New Vantage Partners’ recently released annual survey, shows that 80 percent of the executives who responded fear their companies won’t move fast enough to compete with upstarts steeped in a data-driven ( data analytics, big data, and AI ) culture.
 
 ![_config.yml]({{ site.baseurl }}/images/trace-3157431_1920.jpg)
-*Image by Gerd Altmann via [pixabay] (CC0 Creative Commons)*
+*Image by Gerd Altmann via [pixabay](https://pixabay.com/pt/rastreamento-bordo-tecnologia-3157431/) (CC0 Creative Commons)*
 
 Working as a Solution Architect for Imagem, the Brazilian Esri distributor, and having many ears of experience helping customer with digital transformation and solving their problems applying the science of where is clear to me that it is fundamental we solve the Big Data problem ( a collection of datasets so large and complex that it becomes difficult to process using on-hand database management tools or traditional data processing applications ) due to move towards the data-driven culture. If you look to the other two components of this data-driven triad: Analytics an AI are only really effective in returning the investment if capable of use large datasets. 
 
