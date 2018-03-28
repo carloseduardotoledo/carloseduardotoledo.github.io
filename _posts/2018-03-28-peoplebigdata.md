@@ -3,7 +3,7 @@ layout: post
 title: People, Big Data and Competitive Companies
 ---
 
-As Mariana Kantor noted in the Esri Newsroom [AI Leads Corporate Data Priorities, but Worries Outweigh Progress]( https://www.esri.com/about/newsroom/publications/wherenext/business-executives-and-ai/?adumkts=branding&aduc=social&adum=external&aduSF=linkedin&aduca=m18wherenext&aduco=execs_and_AI&adut=social_team&adbsc=social_20180326_2227211&adbid=6384051703582461952&adbpl=li&adbpr=5311) March 21, 2018 post, a New Vantage Partners’ recently released annual survey of how large corporations view data shows that 80 percent of the executives who responded fear their companies won’t move fast enough to compete with upstarts steeped in a data-driven ( data analytics, big data, and AI ) culture.
+As Mariana Kantor noted in the Esri Newsroom [AI Leads Corporate Data Priorities, but Worries Outweigh Progress]( https://www.esri.com/about/newsroom/publications/wherenext/business-executives-and-ai/?adumkts=branding&aduc=social&adum=external&aduSF=linkedin&aduca=m18wherenext&aduco=execs_and_AI&adut=social_team&adbsc=social_20180326_2227211&adbid=6384051703582461952&adbpl=li&adbpr=5311) March 21, 2018 post, a New Vantage Partners’ recently released annual survey, shows that 80 percent of the executives who responded fear their companies won’t move fast enough to compete with upstarts steeped in a data-driven ( data analytics, big data, and AI ) culture.
 
 ![_config.yml]({{ site.baseurl }}/images/trace-3157431_1920.jpg)
 *Image by Gerd Altmann via [pixabay] (CC0 Creative Commons)*
